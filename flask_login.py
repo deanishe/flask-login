@@ -194,11 +194,7 @@ class LoginManager(object):
             abort(401)
 
         if self.login_message:
-<<<<<<< HEAD
             if self.localize_callback is not None:
-=======
-            if self.localize_callback:
->>>>>>> Enable localisation of flash messages
                 flash(self.localize_callback(self.login_message),
                       category=self.login_message_category)
             else:
@@ -296,11 +292,7 @@ class LoginManager(object):
         if not self.refresh_view:
             abort(403)
 
-<<<<<<< HEAD
         if self.localize_callback is not None:
-=======
-        if self.localize_callback:
->>>>>>> Enable localisation of flash messages
             flash(self.localize_callback(self.needs_refresh_message),
                   category=self.needs_refresh_message_category)
         else:
